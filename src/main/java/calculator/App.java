@@ -25,6 +25,18 @@ public class App {
                 case ('/'): result = num1 / num2; break;
             }
             System.out.println("결과: " + result);
+
+            // 연산 결과 저장하기
+            int i = 0;
+            i++;
+            int[] savedresult = new int[10];
+            savedresult[i] = result;
+
+            // test용
+            for(int j = 0; j < 10; j++){
+                System.out.println(savedresult[j]);
+            }
+
             System.out.println("계산을 종료하려면 exit를 입력해 주세요.");
             Scanner sc2 = new Scanner(System.in);
             String exit = sc2.nextLine();
@@ -37,7 +49,7 @@ public class App {
 
 
 
-        // 반복문을 사용하여 "exit"를 입력하기 전까지 반복해서 작동하게 만들기
+
 
 
 
