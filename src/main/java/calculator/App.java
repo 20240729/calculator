@@ -7,6 +7,8 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         int result = 0;
+        int i = 0;
+        int[] savedresult = new int[10];
 
         while (true){
             System.out.print("첫 번째 숫자를 입력하세요: ");
@@ -29,11 +31,11 @@ public class App {
             System.out.println("결과: " + result);
 
             // 연산 결과 저장하기
-            int i = 0;
+            if(i<10){
+                savedresult[i] = result;
+                i++;
+            }
 
-            int[] savedresult = new int[10];
-            savedresult[i] = result;
-            i++;
 
             // test용
             for(int j = 0; j < 10; j++){
