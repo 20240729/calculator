@@ -34,10 +34,14 @@ public class App {
             if(i<10){
                 savedresult[i] = result;
                 i++;
+            }else {
+                savedresult[i] = savedresult[i+1];
+                savedresult[i] = result;
+
             }
 
 
-            // test용
+            // 저장 배열 test용 프린트
             for(int j = 0; j < 10; j++){
                 System.out.println(savedresult[j]);
             }
