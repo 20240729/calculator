@@ -6,6 +6,8 @@ public class App {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        int result = 0;
+
         while (true){
             System.out.print("첫 번째 숫자를 입력하세요: ");
             int num1 = sc.nextInt();
@@ -17,7 +19,7 @@ public class App {
             int num2 = sc.nextInt();
 
             // 입력받은 양의 정수와 사칙연산 기호를 사용해 연산한 후 결과값 출력하기
-            int result = 0;
+
             switch(operator){
                 case ('+'): result = num1 + num2; break;
                 case ('-'): result = num1 - num2; break;
@@ -28,9 +30,10 @@ public class App {
 
             // 연산 결과 저장하기
             int i = 0;
-            i++;
+
             int[] savedresult = new int[10];
             savedresult[i] = result;
+            i++;
 
             // test용
             for(int j = 0; j < 10; j++){
