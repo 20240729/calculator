@@ -7,7 +7,6 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         int result = 0;
-        int i = 0;
         int[] savedresult = new int[10];
 
         while (true){
@@ -31,14 +30,11 @@ public class App {
             System.out.println("결과: " + result);
 
             // 연산 결과 저장하기
-            if(i<10){
-                savedresult[i] = result;
-                i++;
-            }else {
+            for(int i = 0; i < 9; i++){
                 savedresult[i] = savedresult[i+1];
-                savedresult[i] = result;
-
             }
+
+            savedresult[9] = result;
 
 
             // 저장 배열 test용 프린트
