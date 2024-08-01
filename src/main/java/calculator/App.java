@@ -1,5 +1,6 @@
 package calculator;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
@@ -11,7 +12,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         int result = 0;
-        int[] savedresult = new int[10];
+        ArrayList<Integer> savedresult = new ArrayList<Integer>();
 
         while (true){
             System.out.print("첫 번째 숫자를 입력하세요: ");
@@ -34,17 +35,14 @@ public class App {
             System.out.println("결과: " + result);
 
             // 연산 결과 저장하기
-            for(int i = 0; (i+1) < savedresult.length; i++){
-                savedresult[i] = savedresult[i+1];
-            }
+            savedresult.add(result);
 
-            savedresult[savedresult.length-1] = result;
+            // 테스트용 출력
+            System.out.println(savedresult.toString());
 
 
-            // 저장 배열 test용 프린트
-            for(int j = 0; j < 10; j++){
-                System.out.println(savedresult[j]);
-            }
+
+
 
             System.out.println("계산을 종료하려면 exit를 입력해 주세요.");
             Scanner sc2 = new Scanner(System.in);
