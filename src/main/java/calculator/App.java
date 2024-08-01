@@ -8,7 +8,7 @@ public class App {
 
         // 과제 피드백
         // 아래쪽 배열 한칸 미는 for 문의 조건에서 상수 9 대신 배열의 길이 이용해 보기
-        // int[] savedresult 를 List(ArrayList)로 바꾸고 어떤 것이 바뀌는지 알아보기
+        // int[] savedresult 를 List(ArrayList)로 바꾸고 어떤 것이 바뀌는지 알아보기.
         Scanner sc = new Scanner(System.in);
 
         int result = 0;
