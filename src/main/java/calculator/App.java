@@ -34,11 +34,11 @@ public class App {
             System.out.println("결과: " + result);
 
             // 연산 결과 저장하기
-            for(int i = 0; i < 9; i++){
+            for(int i = 0; (i+1) < savedresult.length; i++){
                 savedresult[i] = savedresult[i+1];
             }
 
-            savedresult[9] = result;
+            savedresult[savedresult.length-1] = result;
 
 
             // 저장 배열 test용 프린트
