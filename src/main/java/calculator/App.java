@@ -37,7 +37,11 @@ public class App {
             // 연산 결과 저장하기
             savedresult.add(result);
 
-            // 테스트용 출력
+            // 먼저 저장된 연산 결과 삭제하기
+            System.out.println("가장 오래된 연산 결과를 삭제하려면 remove를 입력해 주세요.");
+            savedresult.remove(0);
+
+            // 저장된 연산 결과 출력
             System.out.println(savedresult.toString());
 
 
@@ -53,14 +57,6 @@ public class App {
             }
         }
         System.out.println("연산이 종료되었습니다.");
-
-//
-
-
-
-
-
-
 
 
     }
